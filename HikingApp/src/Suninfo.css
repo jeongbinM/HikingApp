@@ -1,0 +1,53 @@
+.Suninfo {
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.sun-character {
+  width: 100%;
+}
+
+.balloon {
+  display: inline-block;
+  position: absolute;
+  background: wheat;
+  padding: 10px;
+  width: 20%; /* Adjust as needed */
+  height: 20%;
+  border-radius: 10px;
+  top: 10%; /* Adjust position */
+  left: 70%; /* Adjust position */
+  transform: translateX(-50%);
+}
+
+.balloon:after {
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background: wheat;
+  bottom: -15px;
+  left: 30%;
+  transform: translateX(-50%) rotate(90deg);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.text-overlay {
+  text-align: center;
+  color: black;
+  font-size: 1.9vw; /* Adjust as needed */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
